@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  
+  // first way the declare the class and the second child class the child class extends the  parent class 
+  // child class access the all the properties can use "super" keyword  the when 
+  // the parent class extends the child class   
+  // the " super " keyword to access the parent class Constructor and method 
+  // 
+  
+
+
+
+class Vehicle {
+    constructor(make, model) {
+        this.make = make;
+        this.model = model;
+    }
+    getInfo() {
+        return `Make: ${this.make}, Model: ${this.model}`;
+    }
+}
+  class Car extends Vehicle {
+    constructor(make, model, year) {
+        super(make, model);
+        this.year = year;
+    }
+    getInfo() {
+        return `${super.getInfo()}, Year: ${this.year}`;
+    }
+}
+let myCar = new Car('Toyota', 'Camry', 2020);
+console.log(myCar.getInfo());  // output will be "  Make: Toyota, Model: Camry, Year: 2020"
+console.log(myCar)  // output Will be   Car {"Make:'Toyota' , Model: 'Camry',Year :2020 "}
+</script>
+</html>

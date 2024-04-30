@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+//    understanding 
+
+//    this method is class  Inheritance  first declare class name is Animal and then constructor declare and declare speak Method 
+//    then declare class name is Dog and then extends Animal and then speak method
+//    class name is Dog is Extends Animal class  
+
+//    overriding
+//    method overriding is concept tied with inheritance , When a child class inherits .some method from the parent the parent Class but 
+//    redefines it on its  on context  then it is known as method overrding
+
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+    speak() {
+        console.log(`${this.name} makes a noise.`);
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        console.log(`${this.name} barks.`);
+    }
+}
+
+let dog = new Dog('Buddy');
+console.log(dog)
+dog.speak();
+
+let animal= new Animal('cat');  //output will be  " buddy Barks"
+animal.speak();  //output will be  " cat a Make noise"
+console.log(animal);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+
+
+// Inheritance the concept of inheritance is the ability to create a new class from an existing class 
+// The first class declare as parent class and the second class as a child class and extends the parent class 
+// Parent class Properties its all the child class can use and access the super Keyword  
+//   The Parent class and child class combination is called Inheritance 
+// The extends keyword is used for  the inheritance between two classes.
+
+
+
+class Shape {
+    constructor(color) {
+        this.color = color;
+    }
+    getColor() {
+        return this.color;
+    }
+}
+
+class Circle extends Shape {
+    constructor(color, radius) {
+        super(color);
+        this.radius = radius;
+    }
+}
+
+class ColoredCircle extends Circle {
+    constructor(color, radius) {
+        super(color, radius);
+    }
+}
+
+let coloredCircle = new Circle('blue', "5");
+console.log(coloredCircle.getColor()); // output Will be " Blue"
+console.log(coloredCircle);  // output will be " Blue", " 5"
+
+
+    </script>
+</body>
+</html>
