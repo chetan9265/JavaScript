@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <link rel="stylesheet" href="mdeia.css">
+    
+</head>
+<body>
+  <div class="navbar-head">
+   
+    <div class="navbar-top">
+      <marquee behavior="" direction="">FREE UK DELIVERY ON ORDERS OVER £20 </marquee>
+    </div>
+    <i class="bi bi-search" type="button" id="search-barmedia"></i>
+    <a href="" class="a_media" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3">
+        
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="nav-1.html">Hair Type</a>
+                </li>
+                <li class="nav-item"> 
+                  <a class="nav-link" href="nav-2.html">Hair Concern</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link " href="nav-3.html">
+                    Products
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pet.html" >Pet Teezer</a>
+                </li>
+                <li class="nav-item   nav-itmes">
+                  <a href="sign_up.html" class=""> <i class="bi bi-person permedia"></i><p class="pmedia">New User</p></a>
+                </li>
+              </ul>
+              <div class="middle-navbar  ">
+                  <div class="middle ps-5">
+                       <img src="images/nav-logo.avif" alt="" class="w-25" style="width: 50%;"> 
+                  </div>
+              </div>
+              <form class="d-flex  align-items-center middle-last justify-content-around">
+                <h6 class="pt-2">Explore</h6>
+                <button class="btn btn-outline-dark btnmedia">QUIZ</button>
+                <i class="bi bi-search signmedia" type="button" id="search-bar"></i>
+                <a href="sign_up.html" class=""> <i class="bi bi-person permedia"></i><p class="pmedia">New User</p></a>
+               <a href="" class="amediainner" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+              </form>
+            </div>
+            <!-- bag in media   important -->
+            
+          </div>
+  
+          
+        </nav>
+  </div>
+        
+        <div class="search-bar " id="search-main">
+          <div class="input-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="bi bi-search"></i>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel" > <i class="bi bi-handbag" style="padding-right: 8px;"></i>Your Bag </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body"  style="overflow: hidden;" id="offcanvas-header">
+        <div class="w-100 offcanvasmedia">
+            <div id="container-card-part" style="width: 100%;">
+                <!-- <p class="a-linkcard" style="cursor: pointer;">Remove</p> -->
+            </div>
+        </div>
+        <div class="offcanvas-total"  style="overflow: hidden;">
+          <div class="row " style="border-top: 1px solid rgb(221, 221, 221);">
+          <div class="col-12" style="    padding: 22px 20px   20px 20px;     ">
+             <div class="text-under d-flex justify-content-between">
+              <h4 style="font-size: 15px; font-weight: 600;">Subtotal</h4>
+              <p id="totalprice"></p>
+              <!-- <input type="number"> -->
+             </div>
+             <div class="text-under-p">
+              <p ><i class="bi bi-gift"></i> Got a discount code? Don’t worry! You can apply it at checkout.</p>
+             </div>
+             <div class="text-under-buttons">
+              <button class="btn btn1 w-100"> Checkout Securily</button>
+              <button class="btn w-100 btn2 "  style="margin-top: 2%;      padding: 10px 15px; border-radius: 0px;">View Bag</button>
+             </div>
+             <div class="tex-p">
+              <p style="padding: 7px 5px 0px 5px; text-align: center; font-size: 13px;">Free Delivery on all orders over £20 & Free Returns</p>
+             </div>
+             <div class="text-card-option" style="padding: 0px;">
+              <div class="card-footer-last d-flex justify-content-between" style="width: 80%; margin: auto;">
+                <div class="img">
+                  <img src="images/img_payment_1.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_2.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_3.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_4.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_5.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_6.svg" alt="">
+                </div>
+              </div>
+             </div>
+          </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+      </div>
+
+         
+          <div class="container-fluid ">
+            <div class="row">
+            <div class="col-12 d-flex justify-content-between nav-section-one " style="margin-top: 5%; padding: 20px 20px 20px 20px;">
+                <div class="col-12 col-lg-6 col-md-10  navdescription">
+                     <img src="" id="description-img" alt="" class="w-100 " >
+                </div>
+                <div class="col-12 col-lg-5 nav-three " style="margin-top: 7%;">
+                  <div>
+                    <div id="nav-three-container" style="margin-bottom: 3%;">
+                      <div  class="descripton">
+                        <span id="use-data-three" style="border: 2px solid  #edb3ce; padding: 5px 10px; color: #000000; font-size: 12px; border-radius: 7px;">
+                           </span> 
+                           <div class="star">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <span>(0)</span>
+                           </div>
+                           <div class="text-data-uper d-flex justify-content-between" style="margin-top: 1.9%;">
+                            <h3 style="font-size: 28px; font-weight: 700; " id="product-name"></h3>
+                            <p style="margin-top: 1.7%;" id="product-price"></p>
+                          </div> 
+                          <span class="order-card" >
+                            <p style="font-size: 12px; margin-top:3%;"><i class="bi bi-arrow-clockwise" style="font-size: 17px; padding-right: 5px;"></i><span> Recycle and get</span> <b> 15% off your next order! </b>- <a href="" style="color:black;  "> Find out more</a></p>
+                          </span>
+                          <div class="select-data d-flex justify-content-between">
+                            <select name="" id="size" class="form-select">
+                              <option value="">Regular</option>
+                              <option value="">Large</option>
+                              <option value="">Mini</option>
+                            </select> 
+                             <div class="color-data d-flex justify-content-between" id="color-data"
+                             style=" height: 40px; padding: 7px 10px; width: 50%; border: 1px solid rgb(222 222 222) ; border-radius: 20px;">
+                                <div class="d-flex justify-content-between">
+                                    <span style=" background-color:#F3CFC6;  padding: 1px 10px -0px 14px; border-radius: 50%;"></span>
+                                    <h5 style="font-size: 11px; padding-top: 6px; padding-left: 15px;" id="color"></h5>
+                                </div>
+                                    <i class="bi bi-chevron-down" style="padding-top: 2px;"></i>
+                                 </div>
+                                 
+                             </div>
+                             <div class="buttons">
+                             <button class="btn btn1 w-100" id="ADD-TO-CART-BTN">ADD TO BAG - <span  id="price-bag"></h6>
+                            </button>
+                             
+                             </div>
+                      </div>
+                        
+                    </div>
+                    <span style="font-size: 12px;"><b>Pair it with</b></span>
+
+                     <div class="pairdescription">
+
+                           <div class="d-flex mt-4  pairdescription" style="overflow: scroll; " id="comtainer-three-part">
+                     
+                                
+                                
+                      </div>
+       
+                          </div>
+
+
+                     </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="container-fluid accordian" style="margin-top: 3%;">
+        
+    <div class="container">
+
+      <div class="container-inner">
+
+          <!-- Section Title -->
+
+          <!-- Tab / Collapse Section -->
+
+          <div class="tab-container">
+
+              <!-- Tab 1 -->
+
+              <div class="tab-accordian">
+
+                  <div class="titleWrapper inactive">
+                      <h3 class="accordionhead">Description</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p>There’s a wide range of different brushes that groomers use, however our range of detangling brushes are super gentle, making the grooming experience pleasant for you and your pooch. </p>              
+            
+                  </div>
+
+              </div>
+
+              <!-- Tab 2 -->
+
+              <div class="tab-accordian">
+
+                  <div class="titleWrapper  inactive">
+                      <h3 class="accordionhead">Review</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p>There are ways to detangle a dog without a brush, but they are a lot more difficult than actually just using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat for your dog.
+ 
+                  </div>
+
+              </div>
+
+              <!-- Tab 3 -->
+
+              <div class="tab-accordian lstaccordian ">
+
+                  <div class="titleWrapper inactive">
+                      <h3 class="accordionhead">Delivery</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p>There are ways to detangle a dog without a brush, but they are a lot more difficult than actually just using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat for your dog.
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+          </div>
+
+          <div class="container-fluid mt-4">
+            <div class="row ">
+              <div class="col-12 images-sec-img d-flex mt-5 ">
+                <div class="col-12 col-lg-6 col-md-5">
+                  <div class="text-three-section d-flex justify-content-between">
+                    <h2>The Ultimate  Detangler</h2>
+                    <p>Our patented teeth have two-tiered technology with added flex for wet hair. The long, flexible teeth detangle, removing knots and reducing breakage, while the short teeth smooth, for glossy, frizz-free hair.</p>
+
+                  </div>
+                  <div class="images-threee mt-2">
+                    <img src="images/nav-three-section.webp" alt="" class="w-100" style="height: 450px;">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-7 images-img-one h-100">
+                  <div class="text-part-two">
+                    <div class="row">
+                      <div class="  text-three d-flex justify-content-between">
+                        <div class=" text-three-one d-flex align-items-center justify-content-between">
+                          <h2>80%</h2>
+                          <p>Fewer knots and  brtangles</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h2>82%</h2>
+                          <p>Would recommend  to a friend</p>
+                        </div>
+                      </div>
+                      <div class=" mt-3 text-three d-flex justify-content-between justify-content-lg-between">
+                        <div class="  text-three-two d-flex align-items-center justify-content-between">
+                          <h2>Up to  433</h2>
+                          <p>Flexible  teeth</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h2>97%</h2>
+                          <p>Gentler on the scalp</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="img">
+                    <img src="images/nav_three_section_two.webp" alt="" class="w-100 " style="height: 450px;">
+                  </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 nav-one-text">
+                    <h1 >Complete the look</h1>
+                    
+                </div>
+            </div>
+            <div class="row">
+               
+            </div>
+            <div class="row mt-5">
+              <div class="col-12" style="overflow: auto;">
+                <div id="container-nav-THREE" class="d-flex justify-content-between gap-4 container-nav-description" >
+    
+    
+                  
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="container-fluid " style="margin-top: 5%;">
+          <div class="row mt-5">
+            <div class="col-12" style="text-align: center; padding: 60px 30px; background-color: #efefef;">
+              <h2 class="navthreetext">Tried & Tested</h2>
+              <p style="padding-top: 15px; font-size: 14px; font-weight: 500;">Our products are tried and tested by you, our loyal community.</p>
+            </div>
+          </div>
+         </div>
+
+         <div class="container-fluid image-section-home" >
+          <div class="row">
+              <div class="col-12">
+                  <div class="images-section">
+                     <div class="image">
+                      <img src="images/section_images.webp" alt="" class="">
+                      <div class="text-section">
+                        <h2>Restyle your  routine</h1>
+                        <p style="padding-top: 20px;">Unsure how to put the care in haircare? Discover the tools you need <br>to turn your hair goals into a reality.</p>
+                        <button class="btn btn-outline-dark " style="border-radius: 0px; padding: 13px 15px;margin-top: 3%;">TAKE THE QUIZ</button>
+                    </div>
+                     </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid pet  petdescription">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center imgs-logos" id="images-logos">
+           <div class="d-flex imgses-logos-two justify-content-between">
+            <div class="images-logo">
+              <img src="images/home_page_1.avif" alt="">
+             </div>
+             <div class="images-logo">
+              <img src="images/home_page_2.webp" alt="">
+             </div>
+             <div class="images-logo">
+              <img src="images/home_page_3.webp" alt="">
+             </div>
+           </div>
+            <div class="d-flex imgaes-two-logos justify-content-between">
+              <div class="images-logo">
+                <img src="images/home_page_4.webp" alt="">
+               </div>
+             <div class="images-logo">
+              <img src="images/home_page_3.webp" alt="">
+             </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+     <div class="container-fluid footer-main-one " style="background-color: #fefeff; padding: 50px 20px 40px 20px ;">
+      <div class="footer-aria">
+      <div class="row">
+        <div class="col-12 d-flex footer ">
+          <div class="col-12 col-lg-2 footer-one">
+          <h4><a href="">Contact us</a></h4>
+          <h4><a href="">Delivery & Returns</a></h4>
+          <h4><a href="">Help and FAQS </a></h4>
+          </div>
+          <div class="col-12 col-lg-2 footer-two">
+             <h4> Tangle Teezer</h3>
+              <p><a href="">About us</a></p>
+              <p><a href="">Recycle Your Hairbrush</a></p>
+              <p><a href="">Careers</a></p>
+          </div>
+          <div class="col-12 col-lg-2 footer-three">
+            <h3> Legal </h3>
+              <p><a href=""> Terms & Conditions</a></p>
+              <p><a href="">Privacy Notice</a></p>
+              <p><a href="">Modern Slavery</a></p>
+              <p><a href="">Counterfeits/QR Codes</a></p>
+              <p><a href="">Corporate Social Responsibility</a></p>
+              <p><a href="">Sustainability</a></p>
+              
+
+          </div>
+          <div class="col-12 col-lg-5 footer-four">
+                <div class="input-text">
+                        <div class="typed" style="padding-bottom: 20px;">
+                          <span id="kt_typedjs_example_1" class="fs-5 fw-bold" style="font-size: 22px; "></span>
+                        </div>
+
+                   </div> 
+                  <p class="footer-four-p">Sign up to our newsletter for <b>10% off your next order!</b></p>
+                  <input type="text" placeholder="Email Address" class="input-search">
+                  <i class="bi bi-arrow-right" style="top: 27.8%;"></i>
+                  <div class="check mt-2">
+                    <input type="checkbox" class="check-box">
+                    <span>By submitting your details, you confirm that you agree to the storing and processing of your personal data by Tangle Teezer as described in our ‘Privacy Notice’</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row footer-row-second mt-5">
+          <div class="col-12 d-flex justify-content-between footer-row-sec-lst">
+             <div class="col-12 col-lg-6">
+              <div class="country-select" id="country-select-one">
+                   <img src="images/country_1.svg" alt="">
+                   <p>UK(GPB)</p>
+                   <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="country-select" id="country-select" style="border-top: 1px solid rgb(245 244 246) ; width: 20%;">
+                <img src="images/country_2.svg" alt="">
+                <p>US(USD)</p>
+                <i class="bi bi-chevron-down"></i>
+           </div>
+             </div>
+             <div class="col-12 col-lg-5">
+              <div class="social-media">
+                <a href=""> <i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-pinterest"></i></a>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="row footer-row-last mt-4 pt-3">
+          <div class="col-12 d-flex flex-footer">
+            <div class="col-12 col-lg-7">
+              <p>© 2024 Tangle Teezer All Rights Reserved. Site by <a href="">Velstar </a></p>
+            </div>
+            <div class="col-12 col-lg-3 footer-card-payment">
+              <div class="card-footer-last d-flex justify-content-between">
+                <div class="img">
+                  <img src="images/img_payment_1.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_2.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_3.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_4.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_5.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_6.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+     </div>
+
+
+<script src="JS/index8.js"></script>
+</body>
+</html>

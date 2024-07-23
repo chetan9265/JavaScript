@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="mdeia.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  
+  <div class="navbar-head">
+   
+  <div class="navbar-top">
+    <marquee behavior="" direction="">FREE UK DELIVERY ON ORDERS OVER £20 </marquee>
+  </div>
+  <i class="bi bi-search" type="button" id="search-barmedia"></i>
+  <a href="" class="a_media" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3">
+      
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="nav-1.html">Hair Type</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="nav-2.html">Hair Concern</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="nav-3.html">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pet.html" >Pet Teezer</a>
+              </li>
+              <li class="nav-item   nav-itmes">
+                <a href="sign_up.html" class=""> <i class="bi bi-person permedia"></i><p class="pmedia">New User</p></a>
+              </li>
+            </ul>
+            <div class="middle-navbar  ">
+                <div class="middle ps-5">
+                     <img src="images/nav-logo.avif" alt="" > 
+                </div>
+            </div>
+            <form class="d-flex  align-items-center middle-last justify-content-around">
+              <h6 class="pt-2">Explore</h6>
+              <button class="btn btn-outline-dark">QUIZ</button>
+              <i class="bi bi-search" type="button" id="search-bar"></i>
+              <a href="sign_up.html" ><i class="bi bi-person"></i></a>
+             <a href=""  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+            </form>
+          </div>
+          <!-- bag in media   important -->
+          
+        </div>
+
+        
+      </nav>
+      
+      <div class="search-bar " id="search-main">
+        <div class="input-search">
+          <input type="text" id="search" placeholder="Search">
+          <i class="bi bi-search"></i>
+    </div>
+  </div>
+    </div>
+    <a href="" class="a_media" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+    <div class="slider">
+      <img src="" alt="" id="image-slider">
+      
+    </div>
+    <div class="slider-media">
+      <img src="" alt="" id="image-slider-media">
+      
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel" > <i class="bi bi-handbag" style="padding-right: 8px;"></i>Your Bag </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body"  style="overflow: hidden;" id="offcanvas-header">
+        <div class="w-100 offcanvasmedia">
+            <div id="container-card-part" style="width: 100%;">
+                <!-- <p class="a-linkcard" style="cursor: pointer;">Remove</p> -->
+            </div>
+        </div>
+        <div class="offcanvas-total"  style="overflow: hidden;">
+          <div class="row " style="border-top: 1px solid rgb(221, 221, 221);">
+          <div class="col-12" style="    padding: 22px 20px   20px 20px;     ">
+             <div class="text-under d-flex justify-content-between">
+              <h4 style="font-size: 15px; font-weight: 600;">Subtotal</h4>
+              <p id="totalprice"></p>
+              <!-- <input type="number"> -->
+             </div>
+             <div class="text-under-p">
+              <p ><i class="bi bi-gift"></i> Got a discount code? Don’t worry! You can apply it at checkout.</p>
+             </div>
+             <div class="text-under-buttons">
+              <button class="btn btn1 w-100"> Checkout Securily</button>
+              <button class="btn w-100 btn2 "  style="margin-top: 2%;      padding: 10px 15px; border-radius: 0px;">View Bag</button>
+             </div>
+             <div class="tex-p">
+              <p style="padding: 7px 5px 0px 5px; text-align: center; font-size: 13px;">Free Delivery on all orders over £20 & Free Returns</p>
+             </div>
+             <div class="text-card-option" style="padding: 0px;">
+              <div class="card-footer-last d-flex justify-content-between" style="width: 80%; margin: auto;">
+                <div class="img">
+                  <img src="images/img_payment_1.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_2.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_3.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_4.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_5.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_6.svg" alt="">
+                </div>
+              </div>
+             </div>
+          </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+     <div class="container-fluid" >
+      <div class="row">
+          <div class="col-12 text-center profile-head">
+              <h2>Shop by hair type</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 d-flex  justify-content-between  profile-heading ">
+              <div class="col-10  col-sm-8 col-md-3 m-auto  col-lg-3   profile ">
+                  <div class="images-profile ">
+                      <img src="images/profile_1.webp" alt="" >
+                      <div class="text">
+                          <h3>Straight & Wavy</h3>
+                        <p><i class="bi bi-arrow-right"></i>
+                          <a href="">SHOP NOW</a></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-10 col-sm-8  m-auto col-md-3  col-lg-3 profile">
+                  <div class="images-profile">
+                      <img src="images/profile_2.webp" alt="">
+                    <div class="text">
+                        <h3>Fine or Fragile</h3>
+                      <p>  <i class="bi bi-arrow-right"></i>
+                          <a href="">SHOP NOW</a></p>
+                  </div>
+                  </div>
+              </div>
+              <div class="col-10  col-sm-8 col-md-3  m-auto col-lg-3 profile">
+                  <div class="images-profile">
+                      <img src="images/profile_3.webp" alt="">
+                      <div class="text">
+                          <h3>Thick or Curly</h3>
+                        <p><i class="bi bi-arrow-right"></i>
+                          <a href="">SHOP NOW</a></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-10 col-sm-8  m-auto col-md-3  col-lg-3 profile">
+                   <div class="images-profile">
+                  <img src="images/profile_4.webp" alt="">
+                  <div class="text">
+                      <h3> Tight Curls & Coils</h3>
+                    <p><i class="bi bi-arrow-right"></i>
+                      <a href="">SHOP NOW</a></p>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>
+  
+    
+<div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+             <div class="product-head d-flex justify-content-between ">
+             <div class="product-text"> 
+              <h2>Most wanted products</h2>
+              <ul class="d-flex list-unstyled gap-4 gap-lg-5 mt-4 pt-2 product-option">
+                  <li><a href="">DETANGLING</a></li>  
+                  <li><a href="">KIDS</a></li>
+                  <li><a href="">EVERYDAY DETANGLING SPRAYS</a></li>
+              </ul></div>
+              <div class="product-button">
+                <button class="btn  btn-outline-dark ">SHOP COLLECTION</button>
+              </div>
+             </div>
+          </div>
+      </div>
+      <div class="row data-class">
+        <div class="col-12" id="carousel" style="width:100%; overflow: auto;padding: 20px; margin-left: -1%;">
+          <div class="card-data-home d-flex gap-2 " style="width: 26rem;" id="container-data">
+               </div>
+              </div>
+          </div>
+        </div>
+
+
+   <div class="container-fluid image-section-home">
+      <div class="row">
+          <div class="col-12">
+              <div class="images-section">
+                 <div class="image">
+                  <img src="images/section_images.webp" alt="" class="">
+                  <div class="text-section">
+                    <h2>Restyle your routine</h1>
+                    <p>Unsure how to put the care in haircare? Discover the tools you need to turn your hair goals into a reality.</p>
+                    <button class="btn btn-holdings btn-outline-dark ">TAKE THE QUIZ</button>
+                </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+  </div>  
+
+<div class="container-fluid brand-section">
+    <h1 class="text-center brand" >As seen in
+    </h1>
+    <div class="row">
+        <div class="col-12 ">
+         <div class="container">
+            <div class="row">
+                <div class="col-12 m-auto images-logos d-flex  justify-content-between  ">
+                  <div class="d-flex main-images-home-one  extraimages">
+                 <div class="col-10 col-lg-1 col-md-2 images-brand  ">
+                    <img src="images/VOGUE_LOGO_1.webp" alt=""  >
+                 </div>
+                 <div class="col-10 col-lg-2 col-md-2 images-brand   brand-tqo">
+                    <img src="images/VOGUE_LOGO_2.webp" alt="" class="img-one-sec">
+                 </div>
+                  </div>
+                  <div class="d-flex main-images-home-one external-item">
+                 <div class="col-10 col-lg-2 col-md-2  images-brand ">
+                    <img src="images/VOGUE_LOGO_3.webp" alt="">
+                 </div>
+                 <div class="col-10 col-lg-2 col-md-2 images-brand brnadextra ">
+                       <img src="images/Allure_logo_1.webp" alt="">
+                 </div>
+                  </div>
+                </div>
+            </div>
+            
+            
+             <div class="row mt-5" >
+                <div class="col-12 d-flex justify-content-evenly   images-inner mt-5" style="position: relative;">
+                   <div class="col-12 col-lg-8 images-one " style=" position: relative; z-index: 121;">
+                    <img src="images/product_image_.webp" alt="" class="img-fluid ">
+                   </div>
+                   <div class="col-12 col-lg-4 images-two">
+                    <div class="text-inner">
+                        <div class="text-selection d-flex justify-content-between " >
+                            <h1>Dual teeth exfoliate & massage</h1>
+                            <div class="text-section-shop ">
+                                <p class="pmedia">The Scalp Exfoliator and Massager</p>
+                                <p class="pmedia"><i class="bi bi-arrow-right"></i>
+                                    <a href="">SHOP NOW</a></p>
+                            </div>
+
+                        </div>
+                        <ul class="color-section-home list-unstyled d-flex justify-content-evenly  " >
+                          <li style="background-color:#f99fc9;"><a href=""></a></li>
+                          <li  style="background-color: #8986ca;"><a href=""></a></li>
+                          <li style="background-color:  #a7e6d7;" ><a href=""></a></li>
+                          <li style="background-color: #236192;"><a href=""></a></li>
+                          <li  style="background-color:  #25282a;"><a href=""></a>
+                            <li  style="background-color:  #c1e0ea;"><a href=""></a>
+                          </li>
+
+                        </ul>
+                     
+                    <img src="images/product_image_.2.webp" alt="" class="" >
+                   </div>
+                   </div>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</div> 
+
+
+
+<div class="container-fluid mt-5 ">
+  <div class="row mt-5 pt-5">
+    <div class="col-12">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <h5>”Tangle Teezer is a life saver, it never leaves my handbag.”</h5>
+            <p style="margin-top: 60px;">MAYA JAMA.</p>
+
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <h5>“Oh my god, this brush changed my life. My daughter adores it, and it even works on my curly hair. I don’t know who invented it, but thank you.”</h5>
+              <p>Salma Hayek
+            </p>
+
+          </div>
+          <div class="carousel-item">
+              <h5>"I love the Tangle Teezer; I use that in the shower to comb my hair out because it gets really tangled up!"</h5>
+              <p>Elle Fanning
+            .</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>  
+  
+   <div class="container-fluid  main-sec-dog">
+       <div class="section-home-lst h-100  d-flex">
+        <div class="image-section-se-last d-flex">
+          <img src="images/img_section_last_1.webp" alt="">
+      </div>
+      <div class="text-section-lst">
+        <h1>Loved by humans, adored by pets.</h1>
+        <p>Pet Teezer is designed to gently detangle, de-shed and pamper. Find the perfect brush for your pooch or feline friend and their fur, whatever the breed.</p>
+        <button class="btn btn-outline-dark" style="border-radius: 0px; padding: 15px 15px; font-size: 12px;">SHOP PET TEZZER</button>
+      </div>
+       </div>
+    </div>
+    
+   <div class="container-fluid" style="margin-top: 6%;">
+      <div class="pet-home-page d-flex ">
+        <div class="pet-text-section" style="width: 24%; text-align: left; margin-top: -30px;">
+          <h1>Our pet grooming guides</h1>
+          <p>Want the low-down on how to groom your pet as well as top tips from professionals on how to care for their fur? You’re in the right place. Bring on the pampering!</p>
+        </div>
+        <div class="  pet-profile" style="margin-left: 20px;">
+          <div class="pet-profile ">
+              <img src="images/pet_home_page_1.webp" alt="" >
+              <div class="text">
+                  <h3>Dog Breed & Brush Guide
+                    </h3>
+                <p><i class="bi bi-arrow-right"></i>
+                  <a href="">READ GUIDE</a></p>
+            </div>
+          </div>
+      </div>
+  
+       <div class="  pet-profile  " style="margin-left: 20px;">
+        <div class="pet-profile ">
+            <img src="images/cat_pet_1.webp" alt="" >
+            <div class="text">
+                <h3>Cat Breed & Brush Guide</h3>
+              <p><i class="bi bi-arrow-right"></i>
+                <a href="">READ GUIDE</a></p>
+          </div>
+        </div>
+    </div>
+    <div class="  pet-profile " style="margin-left: 20px;">
+        <div class="pet-profile pet-profile-img" >
+        <img src="images/pet_home_page_3.webp" alt="" class="img-one-class">
+        <div class="text text-one">
+          <h3>How To Groom</h3>
+        <p><i class="bi bi-arrow-right"></i>
+          <a href="">READ GUIDE </a></p>
+    </div>
+        </div>
+  </div>
+      </div>
+  </div>
+  
+
+   <div class="container-fluid   w-100 " style="margin-top: 6%; position: relative;">
+<div class="video-home">
+  <video src="images/video_home_1.mp4"  autoplay loop ></video>
+  <div class="text-video d-flex  justify-content-between align-content-center">
+    <div class="text-video-one">
+      <h1>Master your routine</h1>
+      <p style="padding-top: 20px;">Get inspired with our must-watch how-to videos, interviews and stories, and all the answers to your haircare questions. It’s like reading a magazine at the salon, only better.</p>
+      <button class="btn btn-outline-dark" style="border-radius: 0px; padding: 10px 20px;">View Blogs</button>
+    </div>
+    <div class="text-video-two ">
+      <div class="pet-photos">
+        <div class="pet-main d-flex">
+            <img src="images/home_last_1.avif" alt="" class="h-100 ">
+            <div class="pet-text"  >
+                <p  style="font-size: 15px; font-weight: bold;">How to detangle hair with less breakage</p>
+                <p style="margin-top: 38px;"><i class="bi bi-arrow-right"></i>
+                    <a href="">PLAY VIDEO </a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pet-photos mt-4">
+      <div class="pet-main d-flex" style="height: 140px; margin: auto; ">
+          <img src="images/home_last_2.avif" alt="" class="h-100 ">
+          <div class="pet-text"  >
+              <p  style="font-size: 15px; font-weight: bold;">How to detangle hair with less breakage</p>
+              <p style="margin-top: 38px;"><i class="bi bi-arrow-right"></i>
+                  <a href="">PLAY VIDEO </a></p>
+          </div>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+  </div> 
+  
+
+    <div class="container-fluid pet ptm">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center imgs-logos" id="images-logos">
+             <div class="d-flex imgses-logos-two imgmargin justify-content-between">
+              <div class="images-logo">
+                <img src="images/home_page_1.avif" alt="">
+               </div>
+               <div class="images-logo">
+                <img src="images/home_page_2.webp" alt="">
+               </div>
+               <div class="images-logo">
+                <img src="images/home_page_3.webp" alt="">
+               </div>
+             </div>
+              <div class="d-flex imgaes-two-logos justify-content-between">
+                <div class="images-logo">
+                  <img src="images/home_page_4.webp" alt="">
+                 </div>
+               <div class="images-logo">
+                <img src="images/home_page_3.webp" alt="">
+               </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+
+       <div class="container-fluid footer-main-one " style="background-color: #fefeff; padding: 50px 20px 40px 20px ;">
+    <div class="footer-aria">
+
+
+        <div class="row">
+          <div class="col-12 d-flex footer ">
+            <div class="col-12 col-lg-2 footer-one">
+            <h4><a href="">Contact us</a></h4>
+            <h4><a href="">Delivery & Returns</a></h4>
+            <h4><a href="">Help and FAQS </a></h4>
+            </div>
+            <div class="col-12 col-lg-2 footer-two">
+               <h4> Tangle Teezer</h3>
+                <p><a href="">About us</a></p>
+                <p><a href="">Recycle Your Hairbrush</a></p>
+                <p><a href="">Careers</a></p>
+            </div>
+            <div class="col-12 col-lg-2 footer-three">
+              <h3> Legal </h3>
+                <p><a href=""> Terms & Conditions</a></p>
+                <p><a href="">Privacy Notice</a></p>
+                <p><a href="">Modern Slavery</a></p>
+                <p><a href="">Counterfeits/QR Codes</a></p>
+                <p><a href="">Corporate Social Responsibility</a></p>
+                <p><a href="">Sustainability</a></p>
+                
+
+            </div>
+            <div class="col-12 col-lg-5 footer-four">
+                  <div class="input-text">
+                          <div class="typed" style="padding-bottom: 20px;">
+                            <span id="kt_typedjs_example_1" class="fs-5 fw-bold" style="font-size: 22px; "></span>
+                          </div>
+
+                     </div> 
+                    <p class="footer-four-p">Sign up to our newsletter for <b>10% off your next order!</b></p>
+                    <input type="text" placeholder="Email Address" class="input-search">
+                    <i class="bi bi-arrow-right"></i>
+                    <div class="check mt-2">
+                      <input type="checkbox" class="check-box">
+                      <span>By submitting your details, you confirm that you agree to the storing and processing of your personal data by Tangle Teezer as described in our ‘Privacy Notice’</span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row footer-row-second mt-5">
+            <div class="col-12 d-flex justify-content-between footer-row-sec-lst">
+               <div class="col-12 col-lg-6">
+                <div class="country-select" id="country-select-one">
+                     <img src="images/country_1.svg" alt="">
+                     <p>UK(GPB)</p>
+                     <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="country-select cs1" id="country-select" style="border-top: 1px solid rgb(245 244 246); ">
+                  <img src="images/country_2.svg" alt="">
+                  <p>US(USD)</p>
+                  <i class="bi bi-chevron-down"></i>
+             </div>
+               </div>
+               <div class="col-12 col-lg-5">
+                <div class="social-media">
+                  <a href=""> <i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-youtube"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-pinterest"></i></a>
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="row footer-row-last mt-4 pt-3">
+            <div class="col-12 d-flex flex-footer">
+              <div class="col-12 col-lg-7">
+                <p>© 2024 Tangle Teezer All Rights Reserved. Site by <a href="">Velstar </a></p>
+              </div>
+              <div class="col-12 col-lg-3 footer-card-payment">
+                <div class="card-footer-last d-flex justify-content-between">
+                  <div class="img">
+                    <img src="images/img_payment_1.svg" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="images/img_payment_2.svg" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="images/img_payment_3.svg" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="images/img_payment_4.svg" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="images/img_payment_5.svg" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="images/img_payment_6.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div>
+       
+</body>
+
+<script src="JS/index3.js"></script>
+</html>

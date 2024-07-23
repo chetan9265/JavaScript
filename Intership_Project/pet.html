@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mdeia.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+</head>
+
+<body>
+
+  <div class="navbar-head">
+    <div class="navbar-top">
+      <marquee behavior="" direction="">FREE UK DELIVERY ON ORDERS OVER £20 </marquee>
+    </div>
+    <i class="bi bi-search" type="button" id="search-barmedia"></i>
+    <a href="" class="a_media" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3">
+
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="nav-1.html">Hair Type</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nav-2.html">Hair Concern</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="nav-3.html">
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="pet.html">Pet Teezer</a>
+            </li>
+            <li class="nav-item   nav-itmes">
+              <a href="sign_up.html" class=""> <i class="bi bi-person permedia"></i>
+                <p class="pmedia">New User</p>
+              </a>
+            </li>
+          </ul>
+          <div class="middle-navbar  ">
+            <div class="middle ps-5">
+              <img src="images/nav-logo.avif" alt="" >
+            </div>
+          </div>
+          <form class="d-flex  align-items-center middle-last justify-content-around">
+            <h6 class="pt-2">Explore</h6>
+            <button class="btn btn-outline-dark">QUIZ</button>
+            <i class="bi bi-search" type="button" id="search-bar"></i>
+            <a href="sign_up.html"><i class="bi bi-person"></i></a>
+            <a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"><i class="bi bi-handbag"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="search-bar " id="search-main">
+      <div class="input-search">
+        <input type="text" id="search" placeholder="Search">
+        <i class="bi bi-search"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <i class="bi bi-handbag"
+          style="padding-right: 8px;"></i>Your Bag </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" style="overflow: hidden;" id="offcanvas-header">
+      <div class="w-100 offcanvasbody">
+        <div id="container-card-part" style="width: 100%;">
+          <!-- <p class="a-linkcard" style="cursor: pointer;">Remove</p> -->
+        </div>
+      </div>
+      <div class="offcanvas-total" style="overflow: hidden;">
+        <div class="row " style="border-top: 1px solid rgb(221, 221, 221);">
+          <div class="col-12" style="    padding: 22px 20px   20px 20px;     ">
+            <div class="text-under d-flex justify-content-between">
+              <h4 style="font-size: 15px; font-weight: 600;">Subtotal</h4>
+              <p></p>
+            </div>
+            <div class="text-under-p">
+              <p><i class="bi bi-gift"></i> Got a discount code? Don’t worry! You can apply it at checkout.</p>
+            </div>
+            <div class="text-under-buttons">
+              <button class="btn btn1 w-100"> Checkout Securily</button>
+              <button class="btn w-100 btn2 " style="margin-top: 2%;      padding: 10px 15px; border-radius: 0px;">View
+                Bag</button>
+            </div>
+            <div class="tex-p">
+              <p style="padding: 7px 5px 0px 5px; text-align: center; font-size: 13px;">Free Delivery on all orders over
+                £20 & Free Returns</p>
+            </div>
+            <div class="text-card-option" style="padding: 0px;">
+              <div class="card-footer-last d-flex justify-content-between" style="width: 80%; margin: auto;">
+                <div class="img">
+                  <img src="images/img_payment_1.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_2.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_3.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_4.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_5.svg" alt="">
+                </div>
+                <div class="img">
+                  <img src="images/img_payment_6.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pet-four-three" style="position: relative;"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="images">
+
+          <div class="txt-images">
+            <h2>Grooming Your Dog</h2>
+            <p>At-home grooming made easy with Pet Teezer</p>
+
+            <div class="pet-photos pt-phots">
+              <div class="pet-main ptm-pet d-flex"
+                >
+                <img src="images/pet_section_1.webp" alt="" class="h-100 ">
+                <div class="pet-text">
+                  <p>Want the low-down on how to groom your pet?</p>
+                  <p><i class="bi bi-arrow-right"></i>
+                    <a href="">DSICOVER MORE</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid accordian">
+    <h1>Detangling breed & brush guide</h1>
+    <div class="container ">
+
+      <div class="container-inner petfaq">
+
+        <!-- Section Title -->
+
+        <!-- Tab / Collapse Section -->
+
+        <div class="tab-container">
+
+          <!-- Tab 1 -->
+
+          <div class="tab-accordian">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What is a detangler brush?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>Detangler brushes work by detangling your dog’s coat, quickly and gently. The two-tiered teeth
+                technology work together to remove dirt, knots and loose hair quickly and pain-free. The ergonomic
+                design reduces wrist strain and the unique hollow shape makes this brush super easy to use, as well as
+                to clean and store.. </p>
+            </div>
+
+          </div>
+
+          <!-- Tab 2 -->
+
+          <div class="tab-accordian">
+
+            <div class="titleWrapper  inactive">
+              <h3 class="accordionhead">How often can you detangle a dog?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>Cockapoos, Poodles, Cavapoos and other curly or longer haired breeds need detangling every day. This
+                may sound like a lot but this type of coat is prone to knotting or matting. Something as simple as a
+                collar, harness or even pet jumper can make your dog extremely matted and can cause your dog discomfort.
+                If your dog’s fur gets too matted, you may have to have a groomer clip your pooch’s fur short...
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Tab 3 -->
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What do groomers use to detangle dogs?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> There’s a wide range of different brushes that groomers use, however our range of detangling brushes
+                are super gentle, making the grooming experience pleasant for you and your pooch.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">How do you detangle a dog without a brush?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> There are ways to detangle a dog without a brush, but they are a lot more difficult than actually just
+                using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat
+                for your dog.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">Is there a dog shampoo that reduces tangling?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> There are shampoos to help with the grooming process, however we recommend using a brush alongside the
+                bath process. The cleaner the coat, the smoother the hair, the easier it is to brush.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">Can I use a detangler brush on any dog?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> Our brushes are safe and compatible with almost every breed! The only time you should not brush your
+                dog is if they have brush burn, which is caused by brushing your dog with too much pressure and causing
+                a burn or rash. You should also not press or brush too hard onto your dog’s skin if they have any skin
+                problems or mats as this could cause them more pain and create more tangles. If this happens, you should
+                seek help from your dog groomer
+              </p>
+            </div>
+
+          </div>
+          <div class="tab-accordian lstaccordian">
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What dog breeds are suitable for detangling?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> Our brushes are safe and compatible with almost every breed! The only time you should not brush your
+                dog is if they have brush burn, which is caused by brushing your dog with too much pressure and causing
+                a burn or rash. You should also not press or brush too hard onto your dog’s skin if they have any skin
+                problems or mats as this could cause them more pain and create more tangles. If this happens, you should
+                seek help from your dog groomer
+              </p>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid pet-data">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pet-data-main-sec d-flex align-content-center align-items-center justify-content-between">
+          <div class="col-12 col-lg-5 text-side">
+            <span>DOGS THAT NEED</span>
+            <h2>Detangling</h2>
+            <p>If your dog has fine hair which knots and mats easily, the
+              Pet Teezer <b>Detangling & Dog Grooming Brush </b> ideal for your dog. It has slightly softer teeth which
+              are designed to gently tease knots and tangles apart with no painful pulling or tugging.</p>
+
+            <button class="btn btn-outline-dark">Shop Now</button>
+          </div>
+          <div class="col-12 col-lg-5 " id="container-pet-sec-one">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid accordian two">
+    <h1>De-shedding breed & brush guide</h1>
+    <div class="container">
+
+      <div class="container-inner">
+
+        <!-- Section Title -->
+
+        <!-- Tab / Collapse Section -->
+
+        <div class="tab-container">
+
+          <!-- Tab 1 -->
+
+          <div class="tab-accordian">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What is a de-shedding brush?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> De-shedding brushes work by removing loose fur in your dog’s coat, quickly and gently. The innovative
+                two-tiered teeth remove dirt and loose hairs, pain-free. Similarly to the detangling brush, the
+                ergonomic design makes it easy and comfortable to use, clean and store. </p>
+            </div>
+
+          </div>
+
+          <!-- Tab 2 -->
+
+          <div class="tab-accordian">
+
+            <div class="titleWrapper  inactive">
+              <h3 class="accordionhead">How often can you de-shed a dog?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> Most dogs need de-shedding at least once or twice a week. Each session will also help your dog
+                regulate their body heat far easier. You may need to use your Pet Teezer <a href="">De-Shedding Brush
+                </a> more during heavy shedding seasons.</p>
+            </div>
+
+          </div>
+
+          <!-- Tab 3 -->
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What do groomers use to de‑shed dogs?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p> There’s a wide range of different brushes that groomers use, however our range of de-shedding brushes
+                are super gentle, making the grooming experience pleasant for you and your pooch.
+
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">How do you de-shed a dog without a brush?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>There are ways to de-shed a dog without a brush, but they are a lot more difficult than actually just
+                using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat
+                for your dog.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">Is there a dog shampoo that reduces shedding?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>There are shampoos to help with the grooming process, however we recommend using a brush alongside the
+                bath process. The cleaner the coat, the smoother the hair, the easier it is to brush
+              </p>
+            </div>
+
+          </div>
+
+          <div class="tab-accordian ">
+
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">Can I use a de-shedding brush on any dog?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>Our brushes are safe and compatible with almost every breed! The only time you should not brush your
+                dog is if they have brush burn, which is caused by brushing your dog with too much pressure and causing
+                a burn or rash.
+                You should also not press or brush too hard onto your dog’s skin if they have any skin problems or mats
+                as this could cause them more pain and create more tangles. If this happens, you should seek help from
+                your dog groomer..
+              </p>
+            </div>
+
+          </div>
+          <div class="tab-accordian lstaccordian">
+            <div class="titleWrapper inactive">
+              <h3 class="accordionhead">What dog breeds are suitable for de-shedding?</h3>
+
+              <div class="collapse-icon">
+                <div class="acc-close"></div>
+                <div class="acc-open"></div>
+              </div>
+            </div>
+
+            <div id="descwrapper" class="desWrapper">
+              <p>For heavy shedding and long haired dogs such as the following we suggest the de-shedding brush; Golden
+                Retriever, Old English Sheepdog, Pomeranian, Saint Bernard, Corgi, German Shepherd, Chow Chow, Labrador
+                Retriever, Alsatian Husky
+              </p>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid pet-data">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 d-flex   pet-data-main-sec   align-content-center align-items-center justify-content-between">
+          <div class="col-12 col-lg-5 text-side">
+            <span>DOGS THAT NEED</span>
+            <h2>De-Shedding</h2>
+            <p>If your dog has fine hair which knots and mats easily, the
+              Pet Teezer <b>Detangling & Dog Grooming Brush </b> ideal for your dog. It has slightly softer teeth which
+              are designed to gently tease knots and tangles apart with no painful pulling or tugging.</p>
+            <button class="btn btn-outline-dark">Shop Now</button>
+          </div>
+          <div class="col-12 col-lg-5" id="container-pet-sec-second">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid accordian three">
+    <h1>Puppy breed & brush guide</h1>
+    <div class="container faq">
+
+      <div class="container-inner">
+
+          <!-- Section Title -->
+
+          <!-- Tab / Collapse Section -->
+
+          <div class="tab-container">
+
+              <!-- Tab 1 -->
+
+              <div class="tab-accordian">
+
+                  <div class="titleWrapper inactive">
+                      <h3 class="accordionhead">How do you introduce a puppy to a brush?</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p> Start while your puppy is laying or sitting down and speak to them gently while brushing. Reward them with treats and lots of reassurance to help them understand this is a good thing. If you’re struggling to keep your puppy still, you can get things like puppy chew toys or lick mats to help distract them.</p>              
+                  </div>
+
+              </div>
+
+              <!-- Tab 2 -->
+
+              <div class="tab-accordian">
+
+                  <div class="titleWrapper  inactive">
+                      <h3 class="accordionhead">Do puppies need special brushes?</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p> Puppies definitely need special brushes for their coat type! The Pet Teezer Puppy Brush has softer teeth than a normal brush, so it won’t put as much pressure on your puppy’s fur or skin. Perfect for getting them used to the brushing process, the soft-flex teeth easily go through their fur and the two-tiered teeth detangle, brush away skin flakes and encourage oil glands to develop without brush burns..</p>           
+                  </div>
+
+              </div>
+
+              <!-- Tab 3 -->
+
+              <div class="tab-accordian  ">
+
+                  <div class="titleWrapper inactive">
+                      <h3 class="accordionhead">What age do puppies start cleaning themselves??</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p> Puppies don’t really clean themselves in the same way that cats do, that’s why it’s good to groom them at home..
+
+                      </p> 
+                  </div>
+
+              </div>
+
+              <!-- Tab 4 -->
+              <div class="tab-accordian lstaccordian ">
+
+                  <div class="titleWrapper inactive">
+                      <h3 class="accordionhead">When can I start brushing my puppy’s fur?</h3>
+
+                      <div class="collapse-icon">
+                          <div class="acc-close"></div>
+                          <div class="acc-open"></div>
+                      </div>
+                  </div>
+
+                  <div id="descwrapper" class="desWrapper">
+                      <p> The younger you start brushing your puppy, the better, as it gets them used to it quicker and they will then realise it’s a normal part of their life. If your pooch is older, it may just take a little more time or treats!
+                      </p> 
+                  </div>
+
+              </div>
+              
+           
+           
+
+          </div>
+
+
+      </div>
+
+  </div>
+
+    </div>
+  </div>
+  <div class="container-fluid pet-data">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pet-data-main-sec d-flex align-content-center align-items-center justify-content-between">
+          <div class="col-12 col-lg-5 text-side">
+            <h2>Puppy</h2>
+            <p>When it comes to introducing your puppy to a brush, you should make sure that they’re 100% settled into
+              their new home first. Once they are, you can start the brushing process!.</p>
+
+            <button class="btn btn-outline-dark">Shop Now</button>
+          </div>
+          <div class="col-12 col-lg-5" id="container-pet-sec-last">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid petmedia" style="padding: 20px;">
+    <h1 style="text-align: left; padding-left: 15px; font-family: poppins; font-weight: 700;">Explore More</h1>
+    <div class="row">
+      <div class="col-12 d-flex  pet-data-nav-three">
+        <div class="col-11 col-lg-3  col-md-3 pet-profile ">
+          <div class="pet-profile ">
+            <img src="images/cat_pet_1.webp" alt="">
+            <div class="text  " style="color: #ffffff;">
+              <h3>Straight & Wavy</h3>
+              <p><i class="bi bi-arrow-right"></i>
+                <a href="">SHOP NOW</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-11 col-lg-3 col-md-3  pet-profile  ">
+          <div class="pet-profile ">
+            <img src="images/pet_pet_2.webp" alt="">
+            <div class="text  " style="color: #ffffff;">
+              <h3>Straight & Wavy</h3>
+              <p><i class="bi bi-arrow-right"></i>
+                <a href="">SHOP NOW</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-lg-3 col-md-3   pet-profile ">
+          <div class="pet-profile" id="pet-profile">
+            <img src="images/cat_2_pet.webp" alt="">
+            <div class="text  text-three text-m" style="color: #ffffff;">
+              <h3>Straight & Wavy</h3>
+              <p><i class="bi bi-arrow-right"></i>
+                <a href="">SHOP NOW</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-lg-3 col-md-3  pet-profile ">
+          <div class="pet-profile" id="pet-profile-1">
+            <img src="images/pet_brush_1.webp" alt="">
+            <div class="text  text-three text-m" style="color: #ffffff; ">
+              <h3>Straight & Wavy</h3>
+              <p><i class="bi bi-arrow-right"></i>
+                <a href="">SHOP NOW</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid pet " style="margin-top: 6%;">
+   
+    <div class="row">
+      <div class="col-12 d-flex align-items-center img-pet imgs-logos" id="images-logos">
+        <div class="d-flex imgses-logos-two justify-content-between">
+          <div class="images-logo">
+            <img src="images/home_page_1.avif" alt="">
+          </div>
+          <div class="images-logo">
+            <img src="images/home_page_2.webp" alt="">
+          </div>
+          <div class="images-logo">
+            <img src="images/home_page_3.webp" alt="">
+          </div>
+        </div>
+        <div class="d-flex imgaes-two-logos justify-content-between">
+          <div class="images-logo">
+            <img src="images/home_page_4.webp" alt="">
+          </div>
+          <div class="images-logo">
+            <img src="images/home_page_3.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid footer-main-one " style="background-color: #fefeff; padding: 50px 20px 40px 20px ;">
+    <div class="footer-aria">
+    <div class="row">
+      <div class="col-12 d-flex footer ">
+        <div class="col-12 col-lg-2 footer-one">
+          <h4><a href="">Contact us</a></h4>
+          <h4><a href="">Delivery & Returns</a></h4>
+          <h4><a href="">Help and FAQS </a></h4>
+        </div>
+        <div class="col-12 col-lg-2 footer-two">
+          <h4> Tangle Teezer</h3>
+            <p><a href="">About us</a></p>
+            <p><a href="">Recycle Your Hairbrush</a></p>
+            <p><a href="">Careers</a></p>
+        </div>
+        <div class="col-12 col-lg-2 footer-three">
+          <h3> Legal </h3>
+          <p><a href=""> Terms & Conditions</a></p>
+          <p><a href="">Privacy Notice</a></p>
+          <p><a href="">Modern Slavery</a></p>
+          <p><a href="">Counterfeits/QR Codes</a></p>
+          <p><a href="">Corporate Social Responsibility</a></p>
+          <p><a href="">Sustainability</a></p>
+
+
+        </div>
+        <div class="col-12 col-lg-5 footer-four">
+          <div class="input-text">
+            <div class="typed" style="padding-bottom: 20px;">
+              <span id="kt_typedjs_example_1" class="fs-5 fw-bold" style="font-size: 22px; "></span>
+            </div>
+
+          </div>
+          <p class="footer-four-p">Sign up to our newsletter for <b>10% off your next order!</b></p>
+          <input type="text" placeholder="Email Address" class="input-search">
+          <i class="bi bi-arrow-right"></i>
+          <div class="check mt-2">
+            <input type="checkbox" class="check-box">
+            <span>By submitting your details, you confirm that you agree to the storing and processing of your personal
+              data by Tangle Teezer as described in our ‘Privacy Notice’</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer-row-second mt-5">
+      <div class="col-12 d-flex justify-content-between footer-row-sec-lst">
+        <div class="col-12 col-lg-6">
+          <div class="country-select" id="country-select-one">
+            <img src="images/country_1.svg" alt="">
+            <p>UK(GPB)</p>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="country-select" id="country-select" style="border-top: 1px solid rgb(245 244 246) ;">
+            <img src="images/country_2.svg" alt="">
+            <p>US(USD)</p>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="social-media">
+            <a href=""> <i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer-row-last mt-4 pt-3">
+      <div class="col-12 d-flex flex-footer">
+        <div class="col-12 col-lg-7">
+          <p>© 2024 Tangle Teezer All Rights Reserved. Site by <a href="">Velstar </a></p>
+        </div>
+        <div class="col-12 col-lg-3 footer-card-payment">
+          <div class="card-footer-last d-flex justify-content-between">
+            <div class="img">
+              <img src="images/img_payment_1.svg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/img_payment_2.svg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/img_payment_3.svg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/img_payment_4.svg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/img_payment_5.svg" alt="">
+            </div>
+            <div class="img">
+              <img src="images/img_payment_6.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+
+<script src="JS/index4.js"></script>
+
+
+</script>
+
+</html>

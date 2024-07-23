@@ -1,0 +1,104 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse Tab</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+
+        <div class="container-inner">
+
+            <!-- Section Title -->
+
+            <!-- Tab / Collapse Section -->
+
+            <div class="tab-container">
+
+                <!-- Tab 1 -->
+
+                <div class="tab-accordian">
+
+                    <div class="titleWrapper inactive">
+                        <h3 class="accordionhead">Description</h3>
+
+                        <div class="collapse-icon">
+                            <div class="acc-close"></div>
+                            <div class="acc-open"></div>
+                        </div>
+                    </div>
+
+                    <div id="descwrapper" class="desWrapper">
+                        <p>There’s a wide range of different brushes that groomers use, however our range of detangling brushes are super gentle, making the grooming experience pleasant for you and your pooch. </p>              
+              
+                    </div>
+
+                </div>
+
+                <!-- Tab 2 -->
+
+                <div class="tab-accordian">
+
+                    <div class="titleWrapper  inactive">
+                        <h3 class="accordionhead">Review</h3>
+
+                        <div class="collapse-icon">
+                            <div class="acc-close"></div>
+                            <div class="acc-open"></div>
+                        </div>
+                    </div>
+
+                    <div id="descwrapper" class="desWrapper">
+                        <p>There are ways to detangle a dog without a brush, but they are a lot more difficult than actually just using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat for your dog.
+   
+                    </div>
+
+                </div>
+
+                <!-- Tab 3 -->
+
+                <div class="tab-accordian lstaccordian ">
+
+                    <div class="titleWrapper inactive">
+                        <h3 class="accordionhead">Delivery</h3>
+
+                        <div class="collapse-icon">
+                            <div class="acc-close"></div>
+                            <div class="acc-open"></div>
+                        </div>
+                    </div>
+
+                    <div id="descwrapper" class="desWrapper">
+                        <p>There are ways to detangle a dog without a brush, but they are a lot more difficult than actually just using a brush. When you use a brush every day or week, this helps to maintain a healthy and clean coat for your dog.
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    jQuery(document).ready(function(){
+	jQuery('.titleWrapper').click(function(){
+		var toggle = jQuery(this).next('div#descwrapper');
+		jQuery(toggle).slideToggle("slow");
+	});
+    jQuery('.inactive').click(function(){
+		jQuery(this).toggleClass('inactive active');
+	});
+});
+
+</script>
+</html>
