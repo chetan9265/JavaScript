@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .a{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(146, 146, 146);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  button{
+    padding: 3px 10px 3px 10px;
+    background-color: rgb(235, 233, 233);
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+  input{
+    height: 20px;
+    width: 200px;
+  }
+</style>
+<body>
+
+  <div class="a">
+    <label for="">Enter Your Marks</label>
+<br><br>
+<input type="text" id="two">
+<br><br>
+<button onclick="grade()">Result</button>
+    <h2>  <span id="one"></span></h2>
+  </div>
+  <script>
+    function grade(){
+
+      let a=document.getElementById("two").value;
+        switch(true)
+        {
+          case(a>=90 && a<=100):{
+             document.getElementById("one").innerHTML=" you got Grade is A";
+            break;
+          }
+          case(a>=70 && a<=89):{
+            document.getElementById("one").innerHTML=" you got Grade is B";
+            break;
+          }
+          case(a>=50 && a<=69):{
+
+            document.getElementById("one").innerHTML=" you got  Grade is C";
+            break;
+          }
+          case(a>=50 && a<=69):{
+
+           document.getElementById("one").innerHTML=" you got Grade is D";
+           break;
+            }
+            case(a>=1 && a<=50):{
+
+document.getElementById("one").innerHTML=" Your Fail";
+break;
+ }
+
+        }
+    }
+    grade()
+  </script>
+
+</body>
+</html>

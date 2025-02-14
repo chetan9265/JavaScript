@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="one"></h2>
+    <script>
+         
+     
+
+         function tim(){
+            let date=new Date();
+           let hrs=date.getHours().toString().padStart("2",0);
+           let mins=date.getMinutes().toString().padStart("2",0);
+           let sec=date.getSeconds().toString().padStart("2",0);
+
+            let totaltime=`${hrs}: ${mins}: ${sec}`;
+            document.getElementById("one").innerHTML=totaltime;
+         }
+        setInterval(tim);
+
+    </script>
+</body>
+</html>

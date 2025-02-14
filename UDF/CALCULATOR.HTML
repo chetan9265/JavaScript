@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        height: 350px;
+        width: 350px;
+        background-color: rgb(232, 232, 232);
+
+      
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        border-radius: 15px;
+        padding: 20px;
+        margin: auto;
+    }
+    button{
+        padding: 2px 5px 2px 5px;
+        background-color: rgb(252, 252, 252);
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <div class="a">
+        <label for="">Enter a value of a</label>
+    <br>
+    <input type="text" id="thr">
+    <br>
+    <br><br>
+    <label for="">Enter  value of b</label>
+    <br>
+    <input type="text" id="for">
+    <br><br>
+
+    <button onclick="cal('add')">ADD</button>
+    <button onclick="cal('multi')">Multipication</button>
+
+    <button onclick="cal('minius')">minius</button>
+
+    <button onclick="cal('divide')">divide</button>
+
+    <h2>Answer is: <span id="one"></span></h2>
+    </div>
+    <script>
+          function cal(op){
+                      
+                   let one=document.getElementById("thr").value;
+                   let two=document.getElementById("for").value;
+
+
+                  switch(op)
+                  {
+                    case 'add' :{
+
+                        let r=parseInt(one) + parseInt(two);
+                        document.getElementById("one").innerHTML=r;
+                        break;
+
+                    }
+
+                     case 'multi':{
+                         let r=parseInt(one) * parseInt(two);
+                        document.getElementById("one").innerHTML=r 
+                        break;
+                     }
+                    
+                      case 'minius':{
+                          let r=parseInt(one) - parseInt(two);
+                         document.getElementById("one").innerHTML=r;
+                         break;
+                      }
+                     
+                      case 'divide':{
+                          let r=parseInt(one) / parseInt(two);
+                          document.getElementById("one").innerHTML=r;
+                          break;
+                      }
+                  } 
+
+                }
+          
+                 
+    </script>
+
+
+</body>
+</html>
